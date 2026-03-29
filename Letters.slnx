@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Letters.AppHost/Letters.AppHost.csproj" />
+  <Project Path="Letters.ServiceDefaults/Letters.ServiceDefaults.csproj" />
+  <Project Path="Letters/Letters.csproj" />
+</Solution>
