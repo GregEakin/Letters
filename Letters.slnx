@@ -1,5 +1,7 @@
 <Solution>
   <Project Path="Letters.AppHost/Letters.AppHost.csproj" />
   <Project Path="Letters.ServiceDefaults/Letters.ServiceDefaults.csproj" />
+  <Project Path="Letters.Tests/Letters.Tests/Letters.Tests.csproj" Id="c932288a-8451-4f9f-8092-62dfafe69042" />
+  <Project Path="Letters.Tests/WebApp/WebApp.csproj" Id="985c3886-abff-40db-8104-30d907185844" />
   <Project Path="Letters/Letters.csproj" />
 </Solution>
