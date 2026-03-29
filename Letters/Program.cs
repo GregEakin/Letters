@@ -9,6 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
 
+builder.AddAzureBlobServiceClient("blobs");
+builder.AddAzureTableServiceClient("tables");
+
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();

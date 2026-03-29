@@ -1,0 +1,22 @@
+﻿@page "/example"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+@inject Azure.Storage.Blobs.BlobServiceClient BlobClient
+@inject Azure.Data.Tables.TableServiceClient TableClient
+
+<h3>Azure Storage Example</h3>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        // Example: list blob containers
+        await foreach (var container in BlobClient.GetBlobContainersAsync())
+        {
+            Console.WriteLine(container.Name);
+        }
+
+        // Example: get a table client
+        var tableClient = TableClient.GetTableClient("myTable");
+        await tableClient.CreateIfNotExistsAsync();
+    }
+}
